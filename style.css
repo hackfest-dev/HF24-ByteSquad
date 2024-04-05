@@ -8,6 +8,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+h1,p{
+    text-align: center;
+}
 video {
     position: absolute;
     left: 0;
