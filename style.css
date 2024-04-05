@@ -5,6 +5,19 @@
     box-sizing: border-box;
     color: #fff;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: 1s;
+}
 .container {
     max-width: 950px;
     margin: auto;
@@ -21,23 +34,17 @@
     padding: 20px 50px;
     align-items: center;
 }
+
+.navbar ul:has(a:hover) a:not(:hover){
+    filter:blur(10px)
+}
+
 .logoimg{
     height: 150px;
 
 }
 
 
-
-video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    transition: 1s;
-}
 .navbar .logo {
     text-decoration: none;
     font-size: 2rem;
@@ -55,6 +62,68 @@ video {
     padding: 8px 16px;
     position: relative;
 }
+.hero-sec{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
 
+.hero-sec .main-box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.hero-sec .main-box .box{
+    background-color: black;
+    width: 375px;
+    padding: 20px;
+    height: 260px;
+    border-radius: 10px;
+    row-gap: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.hero-sec .main-box .box:hover{
+    background: #5cc7a433;
+    cursor: pointer;
+    border: 2px solid #4febc1;
+}
+
+.hero-sec .main-box .box .head{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero-sec .main-box .box .img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.hero-sec .main-box .box .more{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #00ffbb;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    background-color: black;
+}
+
+.foot p{
+    color: white;
+}
 
