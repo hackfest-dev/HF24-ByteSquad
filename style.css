@@ -184,3 +184,14 @@ video {
 .page-content .buttons a.active:hover {
     box-shadow: 0 0 40px rgb(190, 176, 176);
 }
+.footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    border-top:  1px solid white;
+    background: black;
+
+    text-align: center;
+}
