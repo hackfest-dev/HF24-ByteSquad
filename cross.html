@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        *, ::before, ::after {
+        *,
+        ::before,
+        ::after {
             margin: 0;
             padding: 0;
             transition: .3s;
             box-sizing: border-box;
             color: #fff;
         }
+
         .container {
             max-width: 950px;
             margin: auto;
             padding-bottom: 50px;
         }
-        
+
         .navbar {
             padding: 12px 10px;
         }
-        
+
         .navbar .containerr {
             display: flex;
             justify-content: space-between;
             padding: 10px 0px;
             align-items: center;
         }
-        .logoimg{
-            height: 150px;
-            
 
-        
+        .logoimg {
+            height: 150px;
+
+
+
         }
-        
-        
-        
+
+
+
         video {
             position: absolute;
             left: 0;
@@ -49,23 +54,36 @@
             z-index: -1;
             transition: 1s;
         }
+
         .navbar .logo {
             text-decoration: none;
             font-size: 2rem;
         }
-        div{
+
+        .box {
             position: relative;
             left: 10%;
+
         }
-        p{
+
+        p {
             font-size: 70px;
             color: burlywood;
         }
-        span{
+
+        span {
             font-size: 28px;
+        }
+        .first{
+            display: flex;
+        }
+        .src{
+            position: relative;
+            left: 30%;
         }
     </style>
 </head>
+
 <body>
     <video autoplay loop muted>
         <source src="Background.mp4">
@@ -73,22 +91,26 @@
     <nav class="navbar">
         <div class="containerr">
             <a href="#" class="logo"><img src="Logo.png" alt="logo" class="logoimg"></a>
-           
+
         </div>
     </nav>
-   <div>
-    <h1>Solution: Cross-border payments</h1>
-    <br>
-    <br>
-    <p>Global Payments </p>
-    <p>reimagined</p>
-    <br>
-    <span>Enable low-cost money tranfers to more</span>
-    <br>
-    
-    <span>countries so you can save your customers</span>
-    <br>
-    
-    <span>money and still grow your margins.</span>
-   </div>
+    <div class="first">
+        <div class="box">
+            <h1>Solution: Cross-border payments</h1>
+            <br>
+            <br>
+            <p>Global Payments </p>
+            <p>reimagined</p>
+            <br>
+            <span>Enable low-cost money tranfers to more</span>
+            <br>
 
+            <span>countries so you can save your customers</span>
+            <br>
+
+            <span>money and still grow your margins.</span>
+        </div>
+        <div class="src">
+            <img class="flowchart" src="Flow.png" alt="" height="550px" width="500px">
+        </div>
+    </div>
