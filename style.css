@@ -130,5 +130,63 @@ video {
     color: white;
 }
 
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.page-content .inner-content {
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+
+.page-content .inner-content .heading {
+    font-size: 5rem;
+}
+
+.page-content .inner-content .heading .txt2 {
+    color: #00ffbb;
+}
+
+
+.page-content .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.page-content .buttons a {
+    display: block;
+    text-decoration: none;
+    margin: 0 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(60px);
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid #ffffff1e;
+}
+
+.page-content .buttons a.active {
+    background-color: white;
+    padding: 20px 50px;
+    color: black;
+}
+
+.page-content .buttons a.active:hover {
+    box-shadow: 0 0 40px rgb(190, 176, 176);
+}
+
+.
+
+
 
 
