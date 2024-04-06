@@ -71,7 +71,7 @@
         }
 
         span {
-            font-size: 28px;
+            font-size: 25px;
         }
         .first{
             display: flex;
@@ -79,6 +79,60 @@
         .src{
             position: relative;
             left: 30%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .container {
+            display: flex;
+            row-gap: 30px;
+            flex-direction: column;
+        }
+        
+        .container .heading {
+            font-size: 5rem;
+        }
+        
+        .container .heading .txt2 {
+            color: #00ffbb;
+        }
+        
+        
+        .container .buttons {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container .buttons a {
+            display: block;
+            text-decoration: none;
+            margin: 0 16px;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            min-width: 100px;
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(60px);
+            overflow: hidden;
+            z-index: 1;
+            border: 1px solid white;
+        }
+        
+        .container.buttons a.active {
+            background-color: white;
+            padding: 20px 50px;
+            color: rgba(248, 228, 228, 0.851);
+        }
+        
+        .container .buttons a.active:hover {
+            box-shadow: 0 0 40px rgb(190, 176, 176);
         }
     </style>
 </head>
@@ -108,6 +162,11 @@
             <br>
 
             <span>money and still grow your margins.</span>
+            <main class="container">          
+                        <div class="buttons">
+                            <a href="#" class="active" id="active">Try it Yourself</a>
+                        </div>                   
+            </main>
         </div>
         <div class="src">
             <img class="flowchart" src="Flow.png" alt="" height="550px" width="500px">
