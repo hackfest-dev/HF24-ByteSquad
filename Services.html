@@ -1,182 +1,199 @@
 <<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial.tech</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <html lang="en">
 
-    <style>
-        *, ::before, ::after {
-            margin: 0;
-            padding: 0;
-            transition: .3s;
-            box-sizing: border-box;
-            color: #fff;
-        }
-        .container {
-            max-width: 950px;
-            margin: auto;
-            padding-bottom: 50px;
-        }
-        
-        .navbar {
-            padding: 12px 10px;
-        }
-        
-        .navbar .containerr {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 50px;
-            align-items: center;
-        }
-        .logoimg{
-            height: 150px;
-        
-        }
-        
-        
-        
-        video {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: auto;
-            width: 100%;
-            object-fit: cover;
-            z-index: -1;
-            transition: 1s;
-        }
-        .navbar .logo {
-            text-decoration: none;
-            font-size: 2rem;
-        }
-        
-        .navbar ul {
-            list-style-type: none;
-            display: flex;
-        }
-        
-        .navbar ul a {
-            display: block;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 8px 16px;
-            position: relative;
-        }
-        .hero-sec{
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-        }
-        
-        .hero-sec .main-box{
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .hero-sec .main-box .box{
-            background-color: black;
-            width: 375px;
-            padding: 20px;
-            height: 260px;
-            border-radius: 10px;
-            row-gap: 12px;
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-            transition: all 0.4s ease-in-out;
-        }
-        
-        .hero-sec .main-box .box:hover{
-            background: #5cc7a433;
-            cursor: pointer;
-            border: 2px solid #4febc1;
-        }
-        
-        .hero-sec .main-box .box .head{
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        .hero-sec .main-box .box .img img{
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-        }
-        
-        .hero-sec .main-box .box .more{
-            text-decoration: underline;
-            cursor: pointer;
-            color: #00ffbb;
-        }
-        a{
-            color: rgb(201, 201, 212);
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial.tech</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        }
-        h1{
-            text-align: center;
-            font-size: 60px;
-        
-            .page-content {
+        <style>
+            *,
+            ::before,
+            ::after {
+                margin: 0;
+                padding: 0;
+                transition: .3s;
+                box-sizing: border-box;
+                color: #fff;
+            }
+
+            .container {
+                max-width: 950px;
+                margin: auto;
+                padding-bottom: 50px;
+            }
+
+            .navbar {
+                padding: 12px 10px;
+            }
+
+            .navbar .containerr {
                 display: flex;
-                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px 50px;
+                align-items: center;
+            }
+
+            .logoimg {
+                height: 150px;
+
+            }
+
+
+
+            video {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                z-index: -1;
+                transition: 1s;
+            }
+
+            .navbar .logo {
+                text-decoration: none;
+                font-size: 2rem;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                display: flex;
+            }
+
+            .navbar ul a {
+                display: block;
+                text-decoration: none;
+                margin: 0 10px;
+                padding: 8px 16px;
+                position: relative;
+            }
+
+            .hero-sec {
+                height: 700px;
+                display: flex;
                 justify-content: center;
                 align-items: center;
-                text-align: center;
-                margin-top: 80px;
+                background-color: black;
             }
-            
-            .page-content .inner-content {
+
+            .hero-sec .main-box {
+                margin-top: 30px;
                 display: flex;
-                row-gap: 30px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .hero-sec .main-box .box {
+                background-color: black;
+                width: 375px;
+                padding: 20px;
+                height: 260px;
+                border-radius: 10px;
+                row-gap: 12px;
+                display: flex;
                 flex-direction: column;
+                margin: 20px;
+                transition: all 0.4s ease-in-out;
             }
-            
+
+            .hero-sec .main-box .box:hover {
+                background: #5cc7a433;
+                cursor: pointer;
+                border: 2px solid #4febc1;
             }
-        
-    </style>
-</head>
-<body>
-    <video autoplay loop muted>
-        <source src="Background.mp4">
-    </video>
-    <nav class="navbar">
-        <div class="containerr">
-            <a href="#" class="logo"><img src="Logo.png" alt="logo" class="logoimg"></a>
-           
-        </div>
-    </nav><h1>Applications of Ethereum</h1>
-    <section class="hero-sec">
-        <div class="main-box">
-            
+
+            .hero-sec .main-box .box .head {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .hero-sec .main-box .box .img img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+
+            .hero-sec .main-box .box .more {
+                text-decoration: underline;
+                cursor: pointer;
+                color: #00ffbb;
+            }
+
+            a {
+                color: rgb(201, 201, 212);
+
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 60px;
+
+                .page-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 80px;
+                }
+
+                .page-content .inner-content {
+                    display: flex;
+                    row-gap: 30px;
+                    flex-direction: column;
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <video autoplay loop muted>
+            <source src="Background.mp4">
+        </video>
+        <nav class="navbar">
+            <div class="containerr">
+                <a href="#" class="logo"><img src="Logo.png" alt="logo" class="logoimg"></a>
+
+            </div>
+        </nav>
+        <h1>Applications of Ethereum</h1>
+        <section class="hero-sec">
+            <div class="main-box">
+
                 <div class="main-box">
+                    <div class="box">
+                        <div class="img">
+                            <img width="70px" src="swap.png" alt="">
+                        </div>
+                        <p class="head">Swap Tokens</p>
+                        <p> Trade any combinations of ERC-20 tokens </p>
+                        <p>permissionless,with ease.</p>
+                    </div>
                     <div class="box">
                         <div class="img">
                             <img width="70px" src="cross.png" alt="">
                         </div>
                         <p class="head">Cross Border Transaction</p>
                         <p>Expericene the Rupee converstion within seconds</p>
-                            <p class="more"> <a href="http://127.0.0.1:3000/cross.html">More Details</a></p>
+                        <p class="more"> <a href="http://127.0.0.1:3000/cross.html">More Details</a></p>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img width="70px" src="swap.png" alt="">
                         </div>
-                    
-                
-                        <div class="box">
-                            <div class="img">
-                                <img width="70px" src="swap.png" alt="">
-                            </div>
-                            <p class="head">Swap Tokens</p>
-                            <p> Trade any combinations of ERC-20 tokens </p>
-                            <p>permissionless,with ease.</p>
-                            </div>
-                </section>
+                        <p class="head">Credit</p>
+                        <p>Introducing the New Digtal age lending borrowing </p>
+                        <p>Expericene the Crypto like Never Before</p>
+                    </div>
+        </section>
 
 
-</body>
-</html>
+    </body>
+
+    </html>
