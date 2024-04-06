@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoTransaction.site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+            transition: 1s;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #000000d7;
+            background-color: rgba(167, 167, 167, 0.547);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #030303;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        .logo {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted>
+        <source src="Background.mp4">
+    </video>
+    <img src="Logo.png" alt="logo" class="logo">
+    <div class="container">
+        <h1>Crypto Transaction</h1>
+        <form id="transactionForm">
+            <label for="senderAddress">Sender Address:</label>
+            <input type="text" id="senderAddress" required>
+            <label for="receiverAddress">Receiver Address:</label>
+            <input type="text" id="receiverAddress" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Send</button>
+        </form>
+        <p id="transactionResult"></p>
+    </div>
+    <script>
+        document.getElementById('transactionForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var senderAddress = document.getElementById('senderAddress').value;
+            var receiverAddress = document.getElementById('receiverAddress').value;
+            var amount = parseFloat(document.getElementById('amount').value);
+
+            var transactionResult = sendCrypto(senderAddress, receiverAddress, amount);
+
+            document.getElementById('transactionResult').innerText = transactionResult;
+        });
+
+
+        function sendCrypto(senderAddress, receiverAddress, amount) {
+
+            return `Transaction successful: Sent ${amount} crypto from ${senderAddress} to ${receiverAddress}`;
+        }
+    </script>
+
+</body>
+
+</html>
