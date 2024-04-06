@@ -1,11 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>deeffs</h1>
-</body>
-</html>
+<<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial.tech</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <style>
+            *,
+            ::before,
+            ::after {
+                margin: 0;
+                padding: 0;
+                transition: .3s;
+                box-sizing: border-box;
+                color: #fff;
+            }
+
+            .container {
+                max-width: 950px;
+                margin: auto;
+                padding-bottom: 50px;
+            }
+
+          
+            .logoimg {
+                height: 150px;
+
+            }
+
+
+
+            video {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                z-index: -1;
+                transition: 1s;
+            }
+
+            .navbar .logo {
+                text-decoration: none;
+                font-size: 2rem;
+            }
+
+         
+
+            .hero-sec {
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            .hero-sec .main-box {
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .hero-sec .main-box .box {
+                background-color: black;
+                width: 400px;
+                padding: 20px;
+                height: 200px;
+                border-radius: 10px;
+                row-gap: 12px;
+                display: flex;
+                flex-direction: column;
+                margin: 2px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .hero-sec .main-box .box:hover {
+                background: #5cc7a433;
+                cursor: pointer;
+                border: 2px solid #4febc1;
+            }
+
+            .hero-sec .main-box .box .head {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .hero-sec .main-box .box .img img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+           
+
+            .hero-sec .main-box .box .more {
+                text-decoration: underline;
+                cursor: pointer;
+                color: #00ffbb;
+            }
+
+            a {
+                color: rgb(201, 201, 212);
+
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 60px;
+            }
+
+            .page-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .page-content .inner-content {
+                display: flex;
+                row-gap: 30px;
+                flex-direction: column;
+            }
+            .box1{
+                display: flex;
+                justify-content: center;
+            }
+            ul{
+               font-size: larger;
+               text-align:center;
+        
+            }
+        </style>
+    </head>
+
+    <body>
+        <video autoplay loop muted>
+            <source src="Background.mp4">
+        </video>
+        <nav class="navbar">
+            <div class="containerr">
+                <a href="#" class="logo"><img src="Logo.png" alt="logo" class="logoimg"></a>
+
+            </div>
+        </nav>
+        <h1>LIQUIDITY POOLS</h1>
+        
+        <section class="hero-sec">
+            <div class="main-box">
+                <div class="box">
+                    <div class="img">
+                        <img width="70px" src="cross.png" alt="">
+                    </div>
+                    <p class="head">Yiled Farming</p>
+                    <p>Expericene the Rupee converstion within seconds</p>
+                    <p class="more"> <a href="http://127.0.0.1:3000/chart.html">More Details</a></p>
+                   
+                </div>
+                
+               
+                
+        </section>
+        <div class="box1">
+            <div class="img">
+                <img width="750px" src="wrk.png" alt="" height="100px">
+            </div>   
+        </div>
+        <br>
+        <br>
+        <ul type="circle">
+        <li><p> Our platform harnesses the power of blockchain technology to create a robust ecosystem that enables users to participate in lending, borrowing, and earning interest with ease and efficiency.
+        </p></li>
+       <li> <p>At Compound Networking and Liquidity Pool, we understand the importance of liquidity in the DeFi space. Hence we are making our efforts in developing sophisticated liquidity pool mechanism in near future that facilitates seamless asset swapping, lending, and borrowing while optimizing capital utilization. By leveraging our liquidity pools, users can access a wide range of financial services, including yield farming, liquidity mining, and asset management, with minimal barriers to entry.
+        </p></li>
+    </ul>
+        
+    </body>
+    </html>
